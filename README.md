@@ -2,14 +2,14 @@
 
 
 ## Introduction
-FastCryptGPU is a GPU-based system for privacy-preserving machine learning based on secure multi-party computation (MPC), which is more efficient and supports maximum pooling. The system supports end-to-end training/inference on the GPU.
+FastCryptGPU is a GPU-based system for privacy-preserving machine learning based on secure multi-party computation (MPC). The system is efficient and supports max pooling. The system supports end-to-end training/inference on the GPU.
 
-While the latest GPU-based framework CryptGPU accelerates the linear computation of secure neural networks, it is non-linear computationally inefficient and does not support maximum pooling. In this work, we propose a hierarchical design scheme for a GPU-based secure neural network that is more efficient and supports maximum pooling. First, implement an arithmetically optimized activation layer, the scheme avoids Boolean circuit calculation and entirely runs on arithmetic secret sharing, thereby effectively reducing communication costs, better utilizing GPU computing performance. Then, implemented a safe and efficient forward propagation and backpropagation of linear layer, activation function, maximum pooling, and loss function. 
+While the latest GPU-based framework CryptGPU accelerates the linear computation of secure neural networks, it is non-linear computationally inefficient and does not support maximum pooling. In this work, we propose a hierarchical design scheme for a GPU-based secure neural network that is more efficient and supports maximum pooling. First, we implement an arithmetically optimized activation layer. The scheme avoids Boolean circuit calculation and runs entirely on arithmetic secret sharing. It effectively reduces communication costs and makes better use of GPU computing performance. Then, we implement a safe and efficient forward propagation and backpropagation of linear layer, activation function, maximum pooling, and loss function. 
 
 Figure 1: System Architecture
 <img src="Architecture.png"/>
 
-The base architecture of our system is adapted from [CryptGPU](https://github.com/jeffreysijuntan/CryptGPU) and [CrypTen](https://github.com/facebookresearch/crypten). Our system is mainly base on CryptGPU(), which is mainly base on CrypTen.
+The base architecture of our system is adapted from [CryptGPU](https://github.com/jeffreysijuntan/CryptGPU) and [CrypTen](https://github.com/facebookresearch/crypten). Our system is mainly based on CryptGPU, which is mainly based on CrypTen.
 
 [CryptGPU](https://github.com/jeffreysijuntan/CryptGPU) is a system for privacy-preserving machine learning based on secure multi-party computation (MPC).  supports end-to-end training/inference on the GPU. This implementation is according to the paper: [CryptGPU: Fast Privacy-Preserving Machine Learning on the GPU](https://arxiv.org/abs/2104.10949) by Sijun Tan, Brian Knott, Yuan Tian, David J. Wu.
 
