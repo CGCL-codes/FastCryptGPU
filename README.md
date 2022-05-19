@@ -1,8 +1,13 @@
 # FastCryptGPU: Fast Privacy Preserving Neural Network on GPU with Maximum Pooling
 
 
-
+## Introduction
 FastCryptGPU is a GPU-based system for privacy-preserving machine learning based on secure multi-party computation (MPC), which is more efficient and supports maximum pooling. The system supports end-to-end training/inference on the GPU.
+
+While the latest GPU-based framework CryptGPU accelerates the linear computation of secure neural networks, it is non-linear computationally inefficient and does not support maximum pooling. In this work, we propose a hierarchical design scheme for a GPU-based secure neural network that is more efficient and supports maximum pooling. First, implement an arithmetically optimized activation layer, the scheme avoids Boolean circuit calculation and entirely runs on arithmetic secret sharing, thereby effectively reducing communication costs, better utilizing GPU computing performance. Then, implemented a safe and efficient forward propagation and backpropagation of linear layer, activation function, maximum pooling, and loss function. 
+
+Figure 1: System Architecture
+<img src="Architecture.png"/>
 
 The base architecture of our system is adapted from [CryptGPU](https://github.com/jeffreysijuntan/CryptGPU) and [CrypTen](https://github.com/facebookresearch/crypten). Our system is mainly base on CryptGPU(), which is mainly base on CrypTen.
 
