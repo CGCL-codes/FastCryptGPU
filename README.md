@@ -82,7 +82,7 @@ python3 setup.py install
 
 The system can perform distributed experiments on three servers, we provide scripts to facilitate this process. The experiment needs to ensure that the three servers can be connected through `LAN`.
 
-First, set the running parameters such as `cuda_visible_devices` in `launch_distributed.sh`. Then, set `username`, `password`, `hostnames` and `master_ip_address` in d.py. Among them, `hostnames` is set to the public IP of the three servers, and `master_ip_address` is set to the private IP of the main server. And install our system on three servers separately. Finally, execute
+First, set the running parameters such as `cuda_visible_devices` in `launch_distributed.sh`. Then, set `username`, `password`, `hostnames` and `master_ip_address` in distributed_launcher.py. Among them, `hostnames` is set to the public IP of the three servers, and `master_ip_address` is set to the private IP of the main server. And install our system on three servers separately. Finally, execute
 ```
 bash launch_distributed.sh
 ```
