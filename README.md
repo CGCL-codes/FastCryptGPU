@@ -87,7 +87,7 @@ First, set the running parameters such as `cuda_visible_devices` in `launch_dist
 bash launch_distributed.sh
 ```
 
-## Introduction to overall structure
+## Introduction to Overall Structure
 Next, we introduce the relationship between FastCryptGPU and CryptGPU. It will be introduced from the software directory, mainly explaining what files FastCryptGPU has specifically modified or added to CryptGPU.
 ```shell
     FastCryptGPU
@@ -129,5 +129,5 @@ How to replace the operator principle:Basic operator switching such as addition 
 The base architecture of our system is adapted from [CryptGPU](https://github.com/jeffreysijuntan/CryptGPU). CryptGPU is built on ABY3 and beaver triples. In contrast, our system is arithmetically optimized based on the Falcon framework at the activation layer. It is completely based on arithmetical secret sharing. Besides that, CryptGPU only supports average pooling in the pooling layer. While our system supports both average pooling and max pooling. But max pooling will be slower than average pooling.
 
 
-## Support Or Contact
+## Author
 CryptGPU is developed in National Engineering Research Center for Big Data Technology and System, Cluster and Grid Computing Lab, Services Computing Technology and System Lab, School of Computer Science and Technology, Huazhong University of Science and Technology, Wuhan, China by Jialei Guo, Xiaoning Wang and Qiangsheng Hua. For any questions, please contact Jialei Guo (guojialei@hust.edu.cn), Xiaoning Wang (wangxiaoning@hust.edu.cn) and Qiangsheng Hua (qshua@hust.edu.cn).
