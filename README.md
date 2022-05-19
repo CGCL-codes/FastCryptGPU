@@ -40,7 +40,7 @@ python3 setup.py install
 
 - **Quick Start**
 
-  The following describes how the FastCryptgpu code is encrypted and decrypted, and how to do addition, multiplication and symbol bit acquisition
+  The following code shows how the FastCryptgpu code is encrypted and decrypted, and how to do addition, multiplication, and symbol bit acquisition.
 
   ```python
   import torch
