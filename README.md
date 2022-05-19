@@ -121,12 +121,12 @@ Next, we introduce the relationship between FastCryptGPU and CryptGPU. It will b
 ```
 The implementation of getting the most significant bit is according to the paper: [FALCON: Honest-Majority Maliciously Secure Framework for Private Deep Learning](https://arxiv.org/abs/2004.02229) by Sameer Wagh, Shruti Tople, Fabrice Benhamouda, Eyal Kushilevitz, Prateek Mittal, Tal Rabin.
 
-How to replace the operator principle:Basic operator switching such as addition and multiplication modify arithmetic.py, sign bit acquisition and maxpool switching modify gradients.py
+How to replace the operator principle: Basic operator switching such as addition and multiplication modify arithmetic.py, sign bit acquisition and maxpool switching modify gradients.py
 
 
 
 ## Comparison with CryptGPU
-The base architecture of our system is adapted from [CryptGPU](https://github.com/jeffreysijuntan/CryptGPU). CryptGPU is built on ABY3 and beaver triples. In contrast, our system is arithmetically optimized based on the Falcon framework at the activation layer. It is completely based on arithmetical secret sharing. Besides that, CryptGPU only supports average pooling in the pooling layer. While our system supports both average pooling and max pooling. But max pooling will be slower than average pooling.
+The base architecture of our system is adapted from [CryptGPU](https://github.com/jeffreysijuntan/CryptGPU). CryptGPU is built on ABY3 and Beaver triples. In contrast, our system is arithmetically optimized based on the Falcon framework at the activation layer. It is completely based on arithmetical secret sharing. Besides that, CryptGPU only supports average pooling in the pooling layer. While our system supports both average pooling and maximum pooling.
 
 
 ## Author
