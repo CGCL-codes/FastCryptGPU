@@ -11,7 +11,7 @@ Figure 1: System Architecture
 
 The base architecture of our system is adapted from [CryptGPU](https://github.com/jeffreysijuntan/CryptGPU) and [CrypTen](https://github.com/facebookresearch/crypten). Our system is based on CryptGPU, which is mainly based on CrypTen.
 
-[CryptGPU](https://github.com/jeffreysijuntan/CryptGPU) is a system for privacy-preserving machine learning based on secure multi-party computation (MPC).  supports end-to-end training/inference on the GPU. This implementation is according to the paper: [CryptGPU: Fast Privacy-Preserving Machine Learning on the GPU](https://arxiv.org/abs/2104.10949) by Sijun Tan, Brian Knott, Yuan Tian, David J. Wu.
+[CryptGPU](https://github.com/jeffreysijuntan/CryptGPU) is a system for privacy-preserving machine learning based MPC. The implementation is according to the paper: [CryptGPU: Fast Privacy-Preserving Machine Learning on the GPU](https://arxiv.org/abs/2104.10949) by Sijun Tan, Brian Knott, Yuan Tian, David J. Wu.
 
 [CrypTen](https://github.com/facebookresearch/crypten) is a privacy-preserving machine learning framework (PPML) built on top of PyTorch, which aims to make secure computing techniques easily accessible to machine learning practitioners. 
 
