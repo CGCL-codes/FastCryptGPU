@@ -25,7 +25,7 @@ Enter the FastCryptGPU directory and install dependencies through `pip3`, then, 
 For simplicity, you can install dependencies in your conda environment.
 
 ```bash
-git clone https://github.com/?
+git clone https://github.com/FastCryptGPU
 cd FastCryptGPU
 pip3 install -r requirements.txt
 python3 setup.py install
