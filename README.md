@@ -9,7 +9,7 @@ While the latest GPU-based framework CryptGPU accelerates the linear computation
 Figure 1: System Architecture
 <img src="Architecture.png"/>
 
-The base architecture of our system is adapted from [CryptGPU](https://github.com/jeffreysijuntan/CryptGPU) and [CrypTen](https://github.com/facebookresearch/crypten). Our system is mainly based on CryptGPU, which is mainly based on CrypTen.
+The base architecture of our system is adapted from [CryptGPU](https://github.com/jeffreysijuntan/CryptGPU) and [CrypTen](https://github.com/facebookresearch/crypten). Our system is based on CryptGPU, which is mainly based on CrypTen.
 
 [CryptGPU](https://github.com/jeffreysijuntan/CryptGPU) is a system for privacy-preserving machine learning based on secure multi-party computation (MPC).  supports end-to-end training/inference on the GPU. This implementation is according to the paper: [CryptGPU: Fast Privacy-Preserving Machine Learning on the GPU](https://arxiv.org/abs/2104.10949) by Sijun Tan, Brian Knott, Yuan Tian, David J. Wu.
 
